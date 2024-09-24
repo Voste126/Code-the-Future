@@ -1,43 +1,180 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>My First Website</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Enthusiast's Haven</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+        h1, h2 {
+            color: #333;
+        }
+        p {
+            color: #666;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 90%;
+            margin: 0 auto;
+        }
+        .intro {
+            text-align: center;
+            margin: 20px 0;
+        }
+        form {
+            background-color: white;
+            padding: 20px;
+            margin: 20px auto;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 400px;
+            width: 100%;
+        }
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+        input, textarea {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        ul, ol {
+            background-color: white;
+            padding: 20px;
+            margin: 20px auto;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+            width: 100%;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        img {
+            display: block;
+            margin: 20px auto;
+            border-radius: 8px;
+        }
+        a {
+            display: block;
+            text-align: center;
+            margin: 20px 0;
+            color: #4CAF50;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .car-gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center; /* Center align the gallery images */
+        }
+        .car-gallery img {
+            margin: 10px;
+            width: 200px;
+            height: 150px;
+            border-radius: 8px;
+        }
+    </style>
 </head>
 <body>
-    <h1>My name is Steve</h1>
-    <p>And I am a Dog person</p>
+    <header>
+        <h1>Car Enthusiast's Haven</h1>
+    </header>
+    <div class="container">
+        <div class="intro">
+            <h1>Welcome to Car Enthusiast's Haven</h1>
+            <p>Your one-stop destination for everything cars!</p>
+        </div>
 
-    <h1>My main title</h1>
-    <h2>My top level heading</h2>
-    <h3>My subheading</h3>
-    <h4>My sub-subheading</h4>
-    <h5>My small subheading</h5>
-    <h6>My extra small heading</h6>
+        <h2>About Me</h2>
+        <form action="" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            <button type="submit">Submit</button>
+        </form>
 
-    <p>This is a single paragraph</p>
+        <h2>My Favorite Car Brands</h2>
+        <ul>
+            <li>BMW</li>
+            <li>Jeep</li>
+            <li>Porsche</li>
+        </ul>
 
-    <p>My Shopping list</p>
-    <ul>
-        <li>Pizza</li>
-        <li>Bread</li>
-        <li>Crisps</li>
-    </ul>
+        <h2>Steps to Purchase a Car</h2>
+        <ol>
+            <li>Get a bank account details for finance</li>
+            <li>Buy the car</li>
+        </ol>
 
-    <p>The steps to follow to make toast are:</p>
-    <ol>
-        <li>Get 2 slices of bread</li>
-        <li>Put the bread in the toaster</li>
-        <li>Press the toaster down</li>
-    </ol>
+        <h2>Car Gallery</h2>
+        <div class="car-gallery">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbwE1jLVWuJrT2grJlV-rqYT8fJm0id2-8XA&s" alt="Car Image 1">
+            <img src="https://pictures.porsche.com/rtt/iris?COSY-EU-100-1711coMvsi60AAt5FwcmBEgA4qP8iBUDxPE3Cb9pNXkBuNYdMGF4tl3U0%25z8rMHIspbWvanYb%255y%25oq%25vSTmjMXD4qAZeoNBPUSfUx4RmHlCgI7Zl2dioCxkF%25vUqCNwuWXsOw3meV6iTCj%25zhRc2GRdqAZ%25oD21P%25S1BAXmenugTfeIJpV7nDhQS" alt="Car Image 2">
+            <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAoHCBUVFBcVFRUYGBcaGx4dGxsbGyAbHhseHR4bIB0hHRseIC8kIh0pHiAgJTYlKS4wMzMzGyI5PjkxPSwyMzABCwsLEA4QHhISHjIpIikyMjIyMjIyNDMyNDIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMv/AABEIALcBEwMBIgACEQEDEQH/xAAcAAABBQEBAQAAAAAAAAAAAAAFAQIDBAYABwj/xABGEAABAgQDBAgCBwYFAwUBAAABAhEAAyExBBJBBSJRYQYTMnGBkaHwscEUI0JS0eHxFRZicoKSBzOiwtJDU4Nzk7Kz0yT/xAAZAQADAQEBAAAAAAAAAAAAAAAAAQIDBAX/xAAoEQACAgEEAwABAwUAAAAAAAAAAQIRAxIhMUEEE1FhFHGBIjJSkaH/2gAMAwEAAhEDEQA/ANEjDGJhg+fpBFMuHBEdDys51iQNVII1BjkKbiO6CSkDi0V1EcQYpTsTjQsufzi0lcVQhJ1hwknQxLSKTZcSIWK6ErH2vOJ0KOrRm0WmPCRClAhAqHNCGU5+Ecu4EVVS21f0guECEVJSbgRpHI1yRLHfAPkzCOfjFpOU3ESDDpFhD8giZTT4HGDXJWXhU3AiJUtIuIIhEdkECyNA4IGjDA2eO+jGCWWEKYftYvUgYZEd1HOCWSFCIftYvWigmRz9IkRIGoi31IjurHEwnMahRB9HT92GHDp+7DsTiESw6lNwFye4QCxPSBbkJlZQCaqLuKVYaubViHl08s0jhcuEHEykj7MVsZtKUghJGarFmOV3vAAzFrrMWriHt3s8RIQlTmpqwLammlS1/GMJ+T8OmHifQ2rHSlmho/3SPRoWXPlqsWp9qns8ozipqwoABwwFDUV0A5F/GFnqU5OjhXi9Q/J38TAvKntwH6SG92aJZQLzEP8AzD8Yo4nGAdhlVrwbVoFKQVJFaMLc/hD5WHJO65Bswo1Lt7rBLy5tbbBHw4J29y6jHLJKQgeOnvjSJZhmFIqhB5V9SfhCJwqRTeDi4LHwq7wqMOA6TmdvvKfnrTyEcs/KyS2tm8fHxx3pFFDpVmdJURXfJtYpTZqt4CHScUWJWoKeqcpYM3w584j2hgPtFRSlN67xBYGrBqE8X8okw2DCUtUspSb3yqIrWlow
+            " alt="Car Image 3">
 
-    <h2>What I Learned in HTML Basics</h2>
-    <p>In the "Code the Future" session, I learned the following HTML basics:</p>
-    <ul>
-        <li>How to structure an HTML document</li>
-        <li>Using different heading levels (h1 to h6)</li>
-        <li>Creating paragraphs with the <code>&lt;p&gt;</code> tag</li>
-        <li>Making lists with <code>&lt;ul&gt;</code> and <code>&lt;ol&gt;</code> tags</li>
-        <li>Adding list items with the <code>&lt;li&gt;</code> tag</li>
-    </ul>
+        
+        <table border="1">
+            <caption>Car Prices</caption>
+            <tr>
+                <th>Car</th>
+                <th>Price</th>
+            </tr>
+            <tr>
+                <td>Porsche</td>
+                <td>$20,000</td>
+            </tr>
+            <tr>
+                <td>BMW</td>
+                <td>$50,000</td>
+            </tr>
+        </table>
+
+        <a href="aboutus.html">About Us</a>
+    </div>
 </body>
 </html>
